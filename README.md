@@ -17,11 +17,11 @@ This repository contains a basic Terraform script that creates a security group 
 
 ## File Structure
 .
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── README.md
-└── .terraform  
+├── main.tf  
+├── variables.tf  
+├── outputs.tf  
+├── README.md  
+└── .terraform    
 
 - `main.tf` contains the main Terraform code for creating the security group and EC2 instances.
 - `variables.tf` contains the variables used in the `main.tf` file.
