@@ -16,7 +16,7 @@ This repository contains a basic Terraform script that creates a security group 
 6. When you're finished, run `terraform destroy` to remove all created resources.
 
 ## File Structure
-.
+.  
 ├── main.tf  
 ├── variables.tf  
 ├── outputs.tf  
