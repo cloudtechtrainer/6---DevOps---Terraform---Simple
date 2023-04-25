@@ -23,5 +23,6 @@ resource "aws_instance" "example" {
   count = 4 
   ami           = "ami-0f8aef1783704ebc9"
   instance_type = "t2.micro"
+  key_name = "tf-key-pair"
   vpc_security_group_ids = [aws_security_group.ssh.id]
 }
