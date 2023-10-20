@@ -17,8 +17,12 @@ Resources:
   MyInstance:
     Type: AWS::EC2::Instance
     Properties:
-      AvailabilityZone: ap-northeast-2a
-      ImageId: ami-0f8aef1783704ebc9
+      AvailabilityZone: ap-south-1a
+      ImageId: ami-099b3d23e336c2e83
       InstanceType: t2.micro
       SecurityGroups:
         - !Ref SSHSecurityGroup
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash -xe
+          mkdir /home/ec2-user/new_folder
