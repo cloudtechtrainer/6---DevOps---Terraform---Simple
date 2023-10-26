@@ -4,7 +4,11 @@
 This repository contains a basic Terraform script that creates a security group and EC2 instances in an AWS environment.
 
 ## Prerequisites
-- Terraform installed on your local machine
+- Terraform installed on your local machine with below commands on Amazon Linux 2 instance
+  sudo yum install -y yum-utils
+  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+  sudo yum -y install terraform
+  
 - AWS account credentials with permissions to create resources
 
 ## Usage
